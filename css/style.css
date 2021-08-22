@@ -1,0 +1,365 @@
+@font-face {
+  font-family: "Montserrat 400";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Montserrat 500";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Playfair 400";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Playfair italic";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtXA-W2r.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Playfair 700";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+body {
+  font-family: "Montserrat 400", sans-serif;
+  font-size: 16px;
+  color: #ae7c78;
+  line-height: 1.3;
+  width: 100vw;
+}
+a {
+  text-decoration: none;
+  color: #ae7c78;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.Montserrat-500 {
+  font-family: "Montserrat 500", sans-serif;
+  font-size: 16px;
+}
+.Playfair-700 {
+  font-family: "Playfair 700", serif;
+  font-size: 36px;
+}
+.nav__logo {
+}
+.header {
+  border-bottom: 1px solid #ae7c78;
+  border-top: 1px solid #ae7c78;
+  margin-top: 26px;
+}
+.nav__link {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 386px;
+  height: 404px;
+}
+.about__title {
+  font-family: "Playfair 400", serif;
+  font-size: 44px;
+  line-height: 1.5;
+}
+.cursive {
+  font-family: "Playfair italic", serif;
+  font-size: 44px;
+  line-height: 1.5;
+}
+.about__text {
+  font-size: 24px;
+  line-height: 1.3;
+}
+.button {
+  display: block;
+  background-color: #d89999;
+  color: #fff;
+  width: 285px;
+  height: 80px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 80px;
+}
+.bouquet1 {
+}
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 0 80px 0;
+  width: 1200px;
+  line-height: 20px;
+}
+.car {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+.car::before {
+  content: url(../icon/car.svg);
+  margin-right: 20px;
+}
+.benefits__wrapper {
+}
+.benefits__title {
+  margin-bottom: 8px;
+}
+.benefits__text {
+}
+.bouquet {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin-right: 40px;
+}
+.bouquet::before {
+  content: url(../icon/bouquet.svg);
+  margin-right: 0 20px;
+}
+.camera {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+.camera::before {
+  content: url(../icon/camera.svg);
+  margin-right: 20px;
+}
+.slider {
+  width: 1200px;
+  margin: 0 auto;
+}
+.title {
+}
+.card {
+}
+.card__title {
+  font-size: 24px;
+}
+.card__text {
+}
+.size {
+}
+.price {
+  font-size: 24px;
+}
+.bouquet3 {
+}
+.arrow {
+}
+.arrow__left {
+  background: none;
+  border: none;
+}
+.arrow__right {
+  background: none;
+  border: none;
+}
+.catalog {
+  width: 1200px;
+  margin: 0 auto;
+}
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/catalog__wedding.jpg) no-repeat 100% center;
+  border: 2px solid;
+  width: 388px;
+  height: 442px;
+  color: #fff;
+}
+.catalog__wedding {
+}
+.catalog__pion {
+}
+.catalog__select {
+}
+.catalog__title {
+}
+.catalog__text {
+}
+.discount {
+  width: 1200px;
+  margin: 0 auto;
+}
+.sale {
+  color: #fff;
+  background-color: #ae7c78;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 380px;
+  padding: 40px 100px;
+}
+.sale__title {
+  font-family: "Playfair 400";
+  font-size: 44px;
+  margin-bottom: 24px;
+}
+.sale__text {
+  font-size: 24px;
+}
+.steps {
+  width: 1200px;
+  margin: 0 auto;
+}
+.steps__title {
+  margin: 8px 0;
+}
+.steps__text {
+}
+.steps__four {
+  text-align: center;
+}
+.order {
+  text-align: center;
+}
+.details {
+  text-align: center;
+}
+.pay {
+  text-align: center;
+}
+.deliver {
+  text-align: center;
+}
+.news {
+  width: 1200px;
+  margin: 0 auto;
+}
+.news__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 387px;
+  height: 460px;
+}
+.news__title {
+}
+.news__text {
+  font-size: 24px;
+  margin: 40px 0;
+}
+.social {
+}
+.instagram {
+}
+.facebook {
+}
+.twitter {
+}
+.bouquet5 {
+}
+.bouquet6 {
+}
+.bouquet7 {
+}
+.comment {
+  border: 1px solid #ae7c78;
+  width: 1200px;
+  margin: 0 auto;
+}
+.comment__title {
+  text-align: center;
+}
+.comment__text {
+}
+.comment__name {
+}
+.marina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tatyana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.olga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts {
+  background: url(../img/map.jpg) center no-repeat;
+  width: 100%;
+  height: 650px;
+}
+.contacts__table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 386px;
+  height: 520px;
+  background-color: #f7fafc;
+  padding: 0 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 40px 0 #d9d9d9;
+}
+.contacts__wait {
+  margin-bottom: 40px;
+}
+.contacts__title {
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+.contacts__main {
+  margin-bottom: 32px;
+  line-height: 20px;
+}
+.nav {
+}
+.footer {
+  background-color: #ae7c78;
+}
+.footer a {
+  color: #fff;
+}

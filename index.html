@@ -1,3 +1,6 @@
+
+<!-- Я еще не делал позиционирование элементов, т.к. обучение гридам и сеткам будет в следующем блоке -->
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -6,28 +9,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Botanika</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="nav">
-    <a href="" class="nav__logo header">
+  <header class="nav header">
+    <a href="" class="nav__logo ">
       <img src="img/logo.svg" alt="Логотип компании Ботаника">
     </a>
     <ul class="nav__menu">
-      <li class="nav__link"><a href="" class="nav__menu">Каталог</a></li>
-      <li class="nav__link"><a href="" class="nav__menu">Доставка и оплата</a></li>
-      <li class="nav__link"><a href="" class="nav__menu">Отзывы </a></li>
-      <li class="nav__link"><a href="" class="nav__menu">Спецпредложения</a></li>
-      <li class="nav__link"><a href="" class="nav__menu">Контакты</a></li>
-      <li class="nav__link"><a href="" class="nav__menu">Корзина</a></li>
+      <li class="nav__link"><a href="">Каталог</a></li>
+      <li class="nav__link"><a href="">Доставка и оплата</a></li>
+      <li class="nav__link"><a href="">Отзывы </a></li>
+      <li class="nav__link"><a href="">Спецпредложения</a></li>
+      <li class="nav__link"><a href="">Контакты</a></li>
+      <li class="nav__link"><a href="">Корзина</a></li>
     </ul>
   </header>
+  <!-- Главный блок -->
   <main class="main">
-    <!-- Главный блок -->
     <h1 class="hidden">Свежие цветы с доставкой</h1>
     <div class="about">
-      <h2 class="about__title1">Авторские букеты<span class='cursive'>в Петербурге</span></h2>
+      <h2 class="about__title">Авторские букеты<span class='cursive'> в Петербурге</span></h2>
       <div class="about__text">Оригинальные свежие букеты
         с доставкой по всему городу</div>
       <a class="button" href=''>Смотреть каталог</a>
@@ -42,49 +46,65 @@
     <section class="benefits">
       <h2 class="hidden">Наши преимущества</h2>
       <div class="car">
-        <h3 class="benefits__title">Быстрая доставка</h3>
-        <p class="benefits__text">Можем собрать букет и передать его в доставку всего за час.</p>
+        <div class="benefits__wrapper">
+          <h3 class="benefits__title Montserrat-500">Быстрая доставка</h3>
+          <p class="benefits__text">Можем собрать букет и передать его в доставку всего за час.</p>
+        </div>
       </div>
       <div class="bouquet">
-        <h3 class="benefits__title">Всегда свежие цветы</h3>
+        <div class="benefits__wrapper">
+        <h3 class="benefits__title Montserrat-500">Всегда свежие цветы</h3>
         <p class="benefits__text">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый
           цветок.</p>
+          </div>
       </div>
       <div class="camera">
-        <h3 class="benefits__title">Отправляем фото цветов</h3>
+        <div class="benefits__wrapper">
+        <h3 class="benefits__title Montserrat-500">Отправляем фото цветов</h3>
         <p class="benefits__text">Перед доставкой сделаем фотографию букета и отправим вам.</p>
+        </div>
       </div>
     </section>
   </main>
   <!-- Делаем слайдер -->
   <section class="slider">
-    <h3 class="title">Популярные букеты</h3>
+    <h3 class="title Playfair-700">Популярные букеты</h3>
     <div class="card">
-      <h3 class="card__title">Букет «Нежность»</h3>
+      <h3 class="card__title Montserrat-500">Букет «Нежность»</h3>
       <p class="card__text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
       <p class="size">30 × 40 см</p>
-      <p class="price">3600 руб.</p>
+      <p class="price Montserrat-500">3600 руб.</p>
       <button class="button" type='button'>Заказать</button>
       <div class="bouquet3">
         <img src="img/bouquet3.jpg" alt="Букет цветов">
       </div>
     </div>
     <div class="arrow">
-      <button class="arrow__left" type='button'><img src="icon/Arrow2.svg" alt="Стрелка влево"></button>
-      <button class="arrow__right" type='button'><img src="icon/Arrow1.svg" alt="Стрелка вправо"></button>
+      <button class="arrow__left" type='button'><img src="icon/arrow2.svg" alt="Стрелка влево"></button>
+      <button class="arrow__right" type='button'><img src="icon/arrow1.svg" alt="Стрелка вправо"></button>
     </div>
   </section>
   <!-- Каталог  -->
   <section class="catalog">
     <h2 class='hidden'>Каталог букетов</h2>
+    
     <a href="" class="catalog__wedding">
-      <img src="img/Catalog__wedding.jpg" alt="Свадебные букеты">
+      <div class="catalog__wrapper">
+        <h3 class="catalog__title Playfair-700">Свадебные букеты</h3>
+        <p class="catalog__text">Букеты для невест</p>
+      </div>
     </a>
     <a href="" class="catalog__pion">
-      <img src="img/Catalog__pion.jpg" alt="Букеты с пионами">
+      <div class="catalog__wrapper">
+      <h3 class="catalog__title Playfair-700">Букеты с пионами</h3>
+      <p class="catalog__text">Букеты с сезонными пионами</p>
+      </div>
     </a>
     <a href="" class="catalog__select">
-      <img src="img/Catalog_select.jpg" alt="Выбрать букет">
+      <div class="catalog__wrapper">
+      <h3 class="catalog__title Playfair-700">Выбрать букет</h3>
+      <p class="catalog__text">Букеты в ассортименте</p>
+      </div>
     </a>
   </section>
   <!-- Скидки -->
@@ -100,37 +120,38 @@
   <!-- 4 шага к идеальному букету -->
   <section class="steps">
     <h2 class="hidden">Как выбрать идеальный букет</h2>
-    <h2 class="steps__four">4 шага к идеальному букету</h2>
+    <h2 class="steps__four Playfair-700">4 шага к идеальному букету</h2>
     <div class="order">
-      <h3 class="order__title">Заказ</h3>
-      <p class="order__text">Выберите понравившийся букет из каталога и оформите заказ</p>
+      <h3 class="steps__title Montserrat-500">Заказ</h3>
+      <p class="steps__text">Выберите понравившийся букет из каталога и оформите заказ</p>
     </div>
     <div class="details">
-      <h3 class="details__title">Уточнение деталей</h3>
-      <p class="details__text">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
+      <h3 class="steps__title Montserrat-500">Уточнение деталей</h3>
+      <p class="steps__text">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
     </div>
     <div class="pay">
-      <h3 class="pay__title">Оплата</h3>
-      <p class="pay__text">Оплатить заказ можно онлайн
+      <h3 class="steps__title Montserrat-500">Оплата</h3>
+      <p class="steps__text">Оплатить заказ можно онлайн
         на сайте или при получении</p>
     </div>
     <div class="deliver">
-      <h3 class="deliver__title">Оплата</h3>
-      <p class="deliver__text">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+      <h3 class="steps__title Montserrat-500">Оплата</h3>
+      <p class="steps__text">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
     </div>
   </section>
   <!-- Новости -->
   <section class="news">
     <h2 class="hidden">Новости про цветы</h2>
     <div class="news__social">
-      <h2 class="news__title">Следите за нашими новостями</h2>
+      <h2 class="news__title Playfair-700">Следите за нашими новостями</h2>
       <p class="news__text">Подписывайтесь на наши соцсети и узнавайте
         о новинках и акциях первым.</p>
-    </div>
-    <div class="social">
-      <a href="" class="instagram"><img src="icon/instagram-icon.svg" alt="значок bycnfuhfvv"></a>
-      <a href="" class="facebook"><img src="icon/facebook-icon.svg" alt="значок фэйсбука"></a>
-      <a href="" class="twitter"><img src="icon/twitter-icon.svg" alt="значок твиттера"></a>
+    
+      <div class="social">
+        <a href="" class="instagram"><img src="icon/instagram-icon.svg" alt="значок bycnfuhfvv"></a>
+        <a href="" class="facebook"><img src="icon/facebook-icon.svg" alt="значок фэйсбука"></a>
+        <a href="" class="twitter"><img src="icon/twitter-icon.svg" alt="значок твиттера"></a>
+      </div>
     </div>
     <img src="img/bouquet5.jpg" alt="Букет цветов" class="bouquet5">
     <img src="img/bouquet6.jpg" alt="Букет цветов" class="bouquet6">
@@ -138,42 +159,44 @@
   </section>
   <!-- Отзывы -->
   <section class="comment">
-    <h2 class="comment__title">Отзывы</h2>
+    <h2 class="comment__title Playfair-700">Отзывы</h2>
     <blockquote class="marina">
       <p class="comment__text">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем
         большое спасибо!</p>
-      <cite class="comment__name">Марина</cite>
+      <cite class="comment__name Montserrat-500">Марина</cite>
     </blockquote>
     <blockquote class="tatyana">
       <p class="comment__text">Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень
         понравился, буду ещё заказывать!</p>
-      <cite class="comment__name">Татьяна</cite>
+      <cite class="comment__name Montserrat-500">Татьяна</cite>
     </blockquote>
     <blockquote class="olga">
       <p class="comment__text">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и
         точно соберут красивый букет!</p>
-      <cite class="comment__name">Татьяна</cite>
+      <cite class="comment__name Montserrat-500">Татьяна</cite>
     </blockquote>
   </section>
   <!-- Наши контакты -->
   <section class="contacts">
-    <h2 class="hidden">Как нас найти</h2>
-    <h2 class="contacts__wait">Мы ждем вас</h2>
-    <p class="contacts__title">Приходите к нам:</p>
-    <p class="contacts__main">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
-    <p class="contacts__title">Режим работы:</p>
-    <p class="contacts__main">Пн-Вск, с 9-00 до 20-00</p>
-    <p class="contacts__title">Позвоните нам:</p>
-    <a class="contacts__main" href='tel:+78129834719'>+ 7 (812) 983-47-19</a>
-    <p class="contacts__title">Напишите нам:</p>
-    <a class="contacts__main" href="mailto:info@botanika.ru">info@botanika.ru</a>
+    <div class="contacts__table">
+      <h2 class="hidden">Как нас найти</h2>
+      <h2 class="contacts__wait Playfair-700">Мы ждем вас</h2>
+      <p class="contacts__title">Приходите к нам:</p>
+      <p class="contacts__main Montserrat-500">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+      <p class="contacts__title">Режим работы:</p>
+      <p class="contacts__main Montserrat-500">Пн-Вск, с 9-00 до 20-00</p>
+      <p class="contacts__title">Позвоните нам:</p>
+      <a class="contacts__main Montserrat-500" href='tel:+78129834719'>+ 7 (812) 983-47-19</a>
+      <p class="contacts__title">Напишите нам:</p>
+      <a class="contacts__main Montserrat-500" href="mailto:info@botanika.ru">info@botanika.ru</a>
+    </div>
   </section>
   <!-- Футер -->
-  <footer class="nav">
-    <a href="" class="nav__logo footer">
-      <img src="img/logo.svg" alt="Логотип компании Ботаника">
+  <footer class="nav footer">
+    <a href="" class="nav__logo ">
+      <img src="icon/logo__footer.svg" alt="Логотип компании Ботаника">
     </a>
-    <ul class="nav__menu">
+    <ul class="nav__menu footer">
       <li class="nav__link"><a href="" class="nav__menu">Каталог</a></li>
       <li class="nav__link"><a href="" class="nav__menu">Доставка и оплата</a></li>
       <li class="nav__link"><a href="" class="nav__menu">Отзывы </a></li>
